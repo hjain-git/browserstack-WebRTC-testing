@@ -1,4 +1,8 @@
-./target/*
-./.vscode
-./.idea
-./src/test
+.settings/
+target/
+src/test
+.vscode
+.idea
+.project
+.classpath
+*.xml

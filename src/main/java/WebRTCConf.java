@@ -152,7 +152,7 @@ public class WebRTCConf {
 	   	
         try {
            //Generating Random new RoomID
-        	int roomId = getRoomID();
+           int roomId = getRoomID();
             
         	//Getting User's Selection
         	Scanner sc = new Scanner(System.in);
