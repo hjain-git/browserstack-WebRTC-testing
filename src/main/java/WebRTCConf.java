@@ -161,7 +161,7 @@ public class WebRTCConf {
         	System.out.println("2 : Press 2 to initiate WebRTC test on Edge and Safari Browser Combination ");
         	System.out.println("3 : Press 3 to initiate WebRTC test on Android and iOS Combination");
         	int userSelection  = sc.nextInt();
-        	
+        	sc.close();
         	Thread t1 = null;
         	Thread t2 = null;
         	

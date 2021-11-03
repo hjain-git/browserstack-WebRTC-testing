@@ -12,6 +12,7 @@ public class WebRTCTestRunner implements Runnable {
 	
 	public static final String USERNAME = System.getenv("BROWSERSTACK_USERNAME");
    public static final String ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
+
     public static final String HUB_URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
     WebDriver driver = null;
     String roomId = null;
@@ -31,7 +32,7 @@ public class WebRTCTestRunner implements Runnable {
 
         try {
         	
-        	//Creating Remote WebDriver based on the capabilites defined in WebRTCConf.java.
+            //Creating Remote WebDriver based on the capabilites defined in WebRTCConf.java.
             driver = new RemoteWebDriver(new URL(HUB_URL), options);
             
             //Creating new WebRTC Room with generated roomID
