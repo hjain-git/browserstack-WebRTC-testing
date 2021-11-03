@@ -1,8 +1,7 @@
-<img  src="https://www.browserstack.com/images/static/header-logo.jpg"  align="left"  width="200">
-
-<img  src="https://www.gstatic.com/devrel-devsite/prod/v328e217e4b751c25f062fe5c7682def5a7a55ca15e8bc2c276cdea0c86a8ee13/webrtc/images/lockup.svg"  align="right"  width="110">
-
-<center>**WebRTC Testing**</center>
+<p>
+  <img src="https://www.browserstack.com/images/static/header-logo.jpg" width="200" align="left" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WebRTC Testing
+  <img src="https://www.gstatic.com/devrel-devsite/prod/v328e217e4b751c25f062fe5c7682def5a7a55ca15e8bc2c276cdea0c86a8ee13/webrtc/images/lockup.svg" width="120" align="right" /> 
+</p>
 
 ---
 
@@ -30,15 +29,11 @@ mvn install -DskipTests
 
 This repository showcases running of WebRTC based application on Browserstack on different browser combinations based on user selection as follows:
 
-| User Selection | Description |
-
-| -------------- | ---------------------------------------------------- |
-
-| 1 | Run WebRTC test on Google Chrome and Firefox Browser |
-
-| 2 | Run WebRTC test on Edge and Safari Browser |
-
-| 3 | Run WebRTC test on Android and iOS |
+| User Selection  | Description  |
+| ------------ | ------------ |
+| 1  | Run WebRTC test on Google Chrome and Firefox Browser  |
+| 2 |  Run WebRTC test on Edge and Safari Browser  |
+| 3  | Run WebRTC test on Android and iOS |
 
 ---
 
@@ -57,14 +52,16 @@ This repository showcases running of WebRTC based application on Browserstack on
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
-- For Windows:
-
-      - For CMD:
+* For Windows:
+  * For CMD:
+   
       ``` shell
       set BROWSERSTACK_USERNAME=<browserstack-username>
       set BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
       ```
-      - For Powershell(Setting Environment Variable Persistently):
+      
+  * For Powershell(Setting Environment Variable Persistently):
+      
       ``` shell
       [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_USERNAME','<browserstack-username>')
       [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_ACCESS_KEY','<browserstack-access-key>')
