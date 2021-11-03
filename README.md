@@ -1,6 +1,7 @@
-<img src="https://www.browserstack.com/images/static/header-logo.jpg" align="left" width="200">
+<img  src="https://www.browserstack.com/images/static/header-logo.jpg"  align="left"  width="200">
 
- <img src="https://www.gstatic.com/devrel-devsite/prod/v328e217e4b751c25f062fe5c7682def5a7a55ca15e8bc2c276cdea0c86a8ee13/webrtc/images/lockup.svg" align="right" width="110"> 
+<img  src="https://www.gstatic.com/devrel-devsite/prod/v328e217e4b751c25f062fe5c7682def5a7a55ca15e8bc2c276cdea0c86a8ee13/webrtc/images/lockup.svg"  align="right"  width="110">
+
 <center>**WebRTC Testing**</center>
 
 ---
@@ -13,24 +14,31 @@ This repository showcases automated testing of WebRTC-based web application on b
 
 - Ensure you have the following dependencies installed on the machine
 
-  - Java >= 8
-  - Maven >= 3.1+
+- Java >= 8
 
-  Maven:
+- Maven >= 3.1+
 
-  ```sh
-  mvn install -DskipTests
-  ```
+Maven:
+
+```sh
+
+mvn install -DskipTests
+
+```
 
 ## Browser combinations in this repository
 
 This repository showcases running of WebRTC based application on Browserstack on different browser combinations based on user selection as follows:
 
-| User Selection | Description                                          |
+| User Selection | Description |
+
 | -------------- | ---------------------------------------------------- |
-| 1              | Run WebRTC test on Google Chrome and Firefox Browser |
-| 2              | Run WebRTC test on Edge and Safari Browser           |
-| 3              | Run WebRTC test on Android and iOS                   |
+
+| 1 | Run WebRTC test on Google Chrome and Firefox Browser |
+
+| 2 | Run WebRTC test on Edge and Safari Browser |
+
+| 3 | Run WebRTC test on Android and iOS |
 
 ---
 
@@ -41,32 +49,27 @@ This repository showcases running of WebRTC based application on Browserstack on
 ### Prerequisites
 
 - Create a new [BrowserStack account](https://www.browserstack.com/users/sign_up) or use an existing one.
+
 - Identify your BrowserStack username and access key from the [BrowserStack Automate Dashboard](https://automate.browserstack.com/) and export them as environment variables using the below commands.
 
-  - For \*nix based and Mac machines:
-
+- For \*nix based and Mac machines:
   ```sh
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
+- For Windows:
 
-  - For Windows:
-  - For CMD:
+      - For CMD:
+      ``` shell
+      set BROWSERSTACK_USERNAME=<browserstack-username>
+      set BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
+      ```
+      - For Powershell(Setting Environment Variable Persistently):
+      ``` shell
+      [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_USERNAME','<browserstack-username>')
+      [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_ACCESS_KEY','<browserstack-access-key>')
+      ```
 
-
-      ```shell
-
-  set BROWSERSTACK_USERNAME=<browserstack-username>
-  set BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
-
-  ````
-  	- For Powershell(Setting Environment Variable Persistently):
-
-  	```shell
-  [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_USERNAME','<browserstack-username>')
-  [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_ACCESS_KEY','<browserstack-access-key>')
-  ````
-
-Alternatively, you can also hardcode username and access_key in the [## WebRTCTestRunner.java](<src/main/java/WebRTCTestRunner.java**](https://stackedit.io/resources/conf/capabilities/test_caps.json)>) file.
+  Alternatively, you can also hardcode username and access_key in the [ WebRTCTestRunner.java](src/main/java/WebRTCTestRunner.java**) file.
 
 ## Running Your Tests
