@@ -67,6 +67,11 @@ This repository showcases running of WebRTC based application on Browserstack on
       [System.Environment]::SetEnvironmentVariable('BROWSERSTACK_ACCESS_KEY','<browserstack-access-key>')
       ```
 
-  Alternatively, you can also hardcode username and access_key in the [ WebRTCTestRunner.java](src/main/java/WebRTCTestRunner.java) file.
+  Alternatively, you can also hardcode USERNAME and ACCESS_KEY in the [ WebRTCTestRunner.java](src/main/java/WebRTCTestRunner.java) file.
 
 ## Running Your Tests
+* To run WebRTC test on Browserstack, open terminal/CMD/Powershell and type:
+  ``` shell
+  mvn exec:java
+  ```
+* You would be prompted to enter input(1,2,3) which would execute the WebRTC test on Browser combinations as mentioned [ here ](#browser-combinations-in-this-repository)
