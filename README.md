@@ -75,3 +75,4 @@ This repository showcases running of WebRTC based application on Browserstack on
   mvn exec:java
   ```
 * You would be prompted to enter input(1,2,3) which would execute the WebRTC test on Browser combinations as mentioned [ here ](#browser-combinations-in-this-repository)
+* Login to Browserstack and you can see your tests successfully executed.
