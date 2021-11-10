@@ -150,7 +150,8 @@ public class WebRTCConf {
             Thread t1 = null;
             Thread t2 = null;
 
-            if (userSelection == 1) {
+            switch (userSelection) {
+            case 1:
                 System.out.println("Your test would execute on Chrome-Firefox Browser Combination");
                 // Creating capabilities for Chrome Browser.
                 ChromeOptions chromeConfiguration = getChromeConfiguration();
@@ -170,8 +171,9 @@ public class WebRTCConf {
                 t2 = new Thread(
                         new WebRTCTestRunner(fireFoxConfiguration, String.valueOf(roomId), true, 20000, userSelection));
                 t2.start();
+                break; // optional
 
-            } else if (userSelection == 2) {
+            case 2:
                 System.out.println("Your test would execute on Edge-Safari Browser Combination");
                 // Creating capabilities for Edge Browser.
                 ChromeOptions edgeConfiguration = getEdgeConfiguration();
@@ -192,8 +194,9 @@ public class WebRTCConf {
                 t2 = new Thread(
                         new WebRTCTestRunner(safariConfiguration, String.valueOf(roomId), true, 20000, userSelection));
                 t2.start();
+                break; // optional
 
-            } else if (userSelection == 3) {
+            case 3:
                 System.out.println("Your test would execute on Android-iOS Combination");
                 // Creating capabilities for Android Mobile Browser.
                 ChromeOptions AndroidConfiguration = getAndroidConfiguration();
@@ -214,10 +217,11 @@ public class WebRTCConf {
                 t2 = new Thread(
                         new WebRTCTestRunner(iOSConfiguration, String.valueOf(roomId), true, 20000, userSelection));
                 t2.start();
-            } else {
+                break;
 
+            default:
                 System.out.println("Please select a valid Option");
-
+                break;
             }
 
             // Wait for threads to finish execution.
